@@ -12936,11 +12936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitRepos\\HealthMgtMicroServices\\HealthMgtMicroServices\\HealthMgt.AuthMicroService\\HealthMgt.AuthMicroService.csproj",
+      "projectUniqueName": "D:\\GitRepos\\HealthMgtMicroServices\\SourceControlWorkSpace\\HealthMgtMicroServices\\HealthMgt.AuthMicroService\\HealthMgt.AuthMicroService.csproj",
       "projectName": "HealthMgt.AuthMicroService",
-      "projectPath": "D:\\GitRepos\\HealthMgtMicroServices\\HealthMgtMicroServices\\HealthMgt.AuthMicroService\\HealthMgt.AuthMicroService.csproj",
+      "projectPath": "D:\\GitRepos\\HealthMgtMicroServices\\SourceControlWorkSpace\\HealthMgtMicroServices\\HealthMgt.AuthMicroService\\HealthMgt.AuthMicroService.csproj",
       "packagesPath": "C:\\Users\\bhathiyad\\.nuget\\packages\\",
-      "outputPath": "D:\\GitRepos\\HealthMgtMicroServices\\HealthMgtMicroServices\\HealthMgt.AuthMicroService\\obj\\",
+      "outputPath": "D:\\GitRepos\\HealthMgtMicroServices\\SourceControlWorkSpace\\HealthMgtMicroServices\\HealthMgt.AuthMicroService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12990,6 +12990,7 @@
             "version": "[2.1.2, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
@@ -13004,10 +13005,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
