@@ -5,11 +5,21 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthMgt.AuthMicroService", "HealthMgt.AuthMicroService\HealthMgt.AuthMicroService.csproj", "{9950D135-B40B-40F1-A671-B9AFA2E63A47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthMgt.OnlineAppointmentMgt", "HealthMgt.OnlineAppointmentMgt\HealthMgt.OnlineAppointmentMgt.csproj", "{65ACEB8F-45CA-440F-9DC6-49D2DBCCC85B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthMgt.OnlineAppointmentMgt", "HealthMgt.OnlineAppointmentMgt\HealthMgt.OnlineAppointmentMgt.csproj", "{65ACEB8F-45CA-440F-9DC6-49D2DBCCC85B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthMgt.InvoiceMgtMicroService", "HealthMgt.InvoiceMgtMicroService\HealthMgt.InvoiceMgtMicroService.csproj", "{25BA1806-CB7F-4F20-92F7-B888D5E0AC39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthMgt.InvoiceMgtMicroService", "HealthMgt.InvoiceMgtMicroService\HealthMgt.InvoiceMgtMicroService.csproj", "{25BA1806-CB7F-4F20-92F7-B888D5E0AC39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthMgt.NotificationMicroService", "HealthMgt.NotificationMicroService\HealthMgt.NotificationMicroService.csproj", "{178ADDF2-2506-4753-961F-BB8F630D0BD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthMgt.NotificationMicroService", "HealthMgt.NotificationMicroService\HealthMgt.NotificationMicroService.csproj", "{178ADDF2-2506-4753-961F-BB8F630D0BD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HealthMgt.Foundation", "HealthMgt.Foundation", "{CF57E42D-B2D5-43FE-8274-E893AD178E93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{5F384E41-B30A-4ED4-B2B1-558290B880C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Http", "Http", "{73D5E930-0F1D-4493-8B94-0B1E1F37C643}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events", "Foundation\Events\Events.csproj", "{A72AABCE-046E-4D8E-99E9-F388B7251C3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Http", "Foundation\Http\Http.csproj", "{6550B843-7840-4D72-AD0C-F3CCB6C05328}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +43,23 @@ Global
 		{178ADDF2-2506-4753-961F-BB8F630D0BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{178ADDF2-2506-4753-961F-BB8F630D0BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{178ADDF2-2506-4753-961F-BB8F630D0BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A72AABCE-046E-4D8E-99E9-F388B7251C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72AABCE-046E-4D8E-99E9-F388B7251C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72AABCE-046E-4D8E-99E9-F388B7251C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72AABCE-046E-4D8E-99E9-F388B7251C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6550B843-7840-4D72-AD0C-F3CCB6C05328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6550B843-7840-4D72-AD0C-F3CCB6C05328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6550B843-7840-4D72-AD0C-F3CCB6C05328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6550B843-7840-4D72-AD0C-F3CCB6C05328}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5F384E41-B30A-4ED4-B2B1-558290B880C3} = {CF57E42D-B2D5-43FE-8274-E893AD178E93}
+		{73D5E930-0F1D-4493-8B94-0B1E1F37C643} = {CF57E42D-B2D5-43FE-8274-E893AD178E93}
+		{A72AABCE-046E-4D8E-99E9-F388B7251C3E} = {5F384E41-B30A-4ED4-B2B1-558290B880C3}
+		{6550B843-7840-4D72-AD0C-F3CCB6C05328} = {73D5E930-0F1D-4493-8B94-0B1E1F37C643}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BBFC36D5-3D84-483F-9E5B-0B2FEE54CA40}
